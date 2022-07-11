@@ -1,0 +1,98 @@
+﻿@model League.Models.HomeViewModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Page to upload the CSV file</h1>
+    <p>Please, select the CSV file and upload it using the field below.<br >The file should contains only number separated by comma.</p>
+</div>
+
+<form method="post" enctype="multipart/form-data">
+    <div class="input-group">
+    <input type="file" class="form-control" id="files" name="files" aria-label="Upload" >
+    <input class="btn btn-outline-secondary" type="submit" id="upload" value="Upload" />
+    </div>
+</form>
+
+@if (ViewBag.message != null)  
+{  
+    <div class="alert alert-info" role="alert">
+        @ViewBag.Message
+    </div>
+}
+else if(ViewBag.ErrorMessage != null)
+{
+    <div class="alert alert-danger" role="alert">
+        @ViewBag.ErrorMessage
+    </div>
+} 
+
+@if(Model.Echo != null){
+    <div class="container mb-result">
+        <div class="row">
+            Echo (given) - Return the matrix as a string in matrix format.
+        </div>
+            @foreach (var item in Model.Echo)
+            {
+                <div class="row">
+                    @foreach (var sub in item)
+                    {
+                        @String.Format("{0}{1}", sub, !item.Last().Equals(sub)?",":"")
+                    }
+                </div>
+            }
+    </div>        
+}
+
+@if(Model.Invert != null){
+   <div class="container mb-result">
+        <div class="row">
+            Invert - Return the matrix as a string in matrix format where the columns and rows are inverted.
+        </div>
+            @foreach (var item in Model.Invert)
+            {
+                <div class="row">
+                    @foreach (var sub in item)
+                    {
+                        @String.Format("{0}{1}", sub, !item.Last().Equals(sub)?",":"")
+                    }
+                </div>
+            }
+    </div>        
+}     
+
+
+@if(Model.Flatten != null){
+   <div class="container mb-result">
+        <div class="row">
+            Flatten - Return the matrix as a 1 line string, with values separated by commas.
+        </div>
+        <div class="row">
+               @Model.Flatten
+        </div>
+    </div>        
+}    
+
+@if(Model.Sum != null){
+   <div class="container mb-result">
+        <div class="row">
+            Sum - Return the sum of the integers in the matrix.
+        </div>
+        <div class="row">
+               @Model.Sum
+        </div>
+    </div>        
+}   
+
+@if(Model.Multiply != null){
+   <div class="container mb-result">
+        <div class="row">
+            Multiply - Return the product of the integers in the matrix.
+        </div>
+        <div class="row">
+               @Model.Multiply
+        </div>
+    </div>        
+}   

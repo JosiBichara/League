@@ -1,0 +1,8 @@
+/Users/djleb/Desenvolvimento/NetCore/Josi/League/bin/Release/net6.0/publish/League
+/Users/djleb/Desenvolvimento/NetCore/Josi/League/bin/Release/net6.0/publish/appsettings.Development.json
+/Users/djleb/Desenvolvimento/NetCore/Josi/League/bin/Release/net6.0/publish/appsettings.json
+/Users/djleb/Desenvolvimento/NetCore/Josi/League/bin/Release/net6.0/publish/package-lock.json
+/Users/djleb/Desenvolvimento/NetCore/Josi/League/bin/Release/net6.0/publish/League.dll
+/Users/djleb/Desenvolvimento/NetCore/Josi/League/bin/Release/net6.0/publish/League.deps.json
+/Users/djleb/Desenvolvimento/NetCore/Josi/League/bin/Release/net6.0/publish/League.runtimeconfig.json
+/Users/djleb/Desenvolvimento/NetCore/Josi/League/bin/Release/net6.0/publish/League.pdb

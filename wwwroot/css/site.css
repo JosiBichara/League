@@ -1,0 +1,25 @@
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+  font-size: 14px;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.mb-result {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.text-center{
+  margin-bottom: 60px;
+}

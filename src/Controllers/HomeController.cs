@@ -25,6 +25,7 @@ public class HomeController : Controller
 
 
     [HttpPost]
+    [DisableRequestSizeLimit]
     public async Task<IActionResult> Index(List<IFormFile> files)
     {
         HomeViewModel viewModel = new HomeViewModel();

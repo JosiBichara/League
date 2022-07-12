@@ -20,7 +20,8 @@
 - Using a terminal go to folder `src` folder into the root project folder
 - Run the command `dotnet run`
 - After the application start up you should see url https://localhost:7124 on the terminal
-- Open the url above on the browser
+- Open the url above on the browser to start to use it
+- You can use sample example files from the `assets` folder to test the application
 
 ### How to test it
 - Install the .NET 6.0 runtime framework if not previouly installed (https://dotnet.microsoft.com/en-us/download/dotnet/6.0)

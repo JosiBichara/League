@@ -57,7 +57,7 @@ public class HomeController : Controller
 
                         ViewBag.Message = "File upload sucessfuly!";
                     }else{
-                        ViewBag.ErrorMessage = "File format invalid!";
+                        ViewBag.ErrorMessage = "Invalid file format! It should be a CSV, having only numbers separated by commas.";
                     }
 
                 }

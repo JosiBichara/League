@@ -5,7 +5,9 @@ using League.Services;
 
 
 namespace League.Controllers;
-
+/// <summary>
+///  Controller responsible for initial view requests
+/// </summary>
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
@@ -47,13 +49,24 @@ public class HomeController : Controller
                         await files[0].CopyToAsync(stream);
                     }
 
+                    _logger.LogDebug("Validate the source file");
                     if(_processDataService.IsFileValid(filePath)){
+                         _logger.LogDebug("reading the valid file, split for comma and return the matrix as a string in matrix format");
                         fileContent = _processDataService.ReadFile(filePath);
-
+                        
+                         _logger.LogDebug("Echo (given) - Return the matrix as a string in matrix format");
                         viewModel.Echo = fileContent;
+                        
+                         _logger.LogDebug("Invert - Return the matrix as a string in matrix format where the columns and rows are inverted");
                         viewModel.Invert = _processDataService.Invert(fileContent);
+                        
+                         _logger.LogDebug("Flatten - Return the matrix as a 1 line string, with values separated by commas.");
                         viewModel.Flatten = _processDataService.Flatten(fileContent);
+                        
+                         _logger.LogDebug("Sum - Return the sum of the integers in the matrix");
                         viewModel.Sum = _processDataService.Sum(fileContent);
+                        
+                         _logger.LogDebug("Multiply - Return the product of the integers in the matrix");
                         viewModel.Multiply = _processDataService.Multiply(fileContent);
 
                         ViewBag.Message = "File uploaded successfully!";

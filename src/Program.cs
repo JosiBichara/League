@@ -1,6 +1,7 @@
 using League.Services;
 
 var builder = WebApplication.CreateBuilder(args);
+
 builder.Services.AddSingleton<IProcessDataService, ProcessDataService>();
 
 // Add services to the container.

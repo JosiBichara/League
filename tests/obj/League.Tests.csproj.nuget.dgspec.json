@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/djleb/Desenvolvimento/NetCore/Josi/League/tests/League.Tests.csproj": {}
+    "/Users/josi/Documents/Desenvolvimento/League/tests/League.Tests.csproj": {}
   },
   "projects": {
-    "/Users/djleb/Desenvolvimento/NetCore/Josi/League/src/League.csproj": {
+    "/Users/josi/Documents/Desenvolvimento/League/src/League.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/djleb/Desenvolvimento/NetCore/Josi/League/src/League.csproj",
+        "projectUniqueName": "/Users/josi/Documents/Desenvolvimento/League/src/League.csproj",
         "projectName": "League",
-        "projectPath": "/Users/djleb/Desenvolvimento/NetCore/Josi/League/src/League.csproj",
-        "packagesPath": "/Users/djleb/.nuget/packages/",
-        "outputPath": "/Users/djleb/Desenvolvimento/NetCore/Josi/League/src/obj/",
+        "projectPath": "/Users/josi/Documents/Desenvolvimento/League/src/League.csproj",
+        "packagesPath": "/Users/josi/.nuget/packages/",
+        "outputPath": "/Users/josi/Documents/Desenvolvimento/League/src/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "/Users/djleb/.nuget/NuGet/NuGet.Config"
+          "/Users/josi/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -62,20 +59,17 @@
         }
       }
     },
-    "/Users/djleb/Desenvolvimento/NetCore/Josi/League/tests/League.Tests.csproj": {
+    "/Users/josi/Documents/Desenvolvimento/League/tests/League.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/djleb/Desenvolvimento/NetCore/Josi/League/tests/League.Tests.csproj",
+        "projectUniqueName": "/Users/josi/Documents/Desenvolvimento/League/tests/League.Tests.csproj",
         "projectName": "League.Tests",
-        "projectPath": "/Users/djleb/Desenvolvimento/NetCore/Josi/League/tests/League.Tests.csproj",
-        "packagesPath": "/Users/djleb/.nuget/packages/",
-        "outputPath": "/Users/djleb/Desenvolvimento/NetCore/Josi/League/tests/obj/",
+        "projectPath": "/Users/josi/Documents/Desenvolvimento/League/tests/League.Tests.csproj",
+        "packagesPath": "/Users/josi/.nuget/packages/",
+        "outputPath": "/Users/josi/Documents/Desenvolvimento/League/tests/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "/Users/djleb/.nuget/NuGet/NuGet.Config"
+          "/Users/josi/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -87,8 +81,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/djleb/Desenvolvimento/NetCore/Josi/League/src/League.csproj": {
-                "projectPath": "/Users/djleb/Desenvolvimento/NetCore/Josi/League/src/League.csproj"
+              "/Users/josi/Documents/Desenvolvimento/League/src/League.csproj": {
+                "projectPath": "/Users/josi/Documents/Desenvolvimento/League/src/League.csproj"
               }
             }
           }

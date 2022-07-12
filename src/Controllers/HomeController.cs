@@ -55,7 +55,7 @@ public class HomeController : Controller
                         viewModel.Sum = _processDataService.Sum(fileContent);
                         viewModel.Multiply = _processDataService.Multiply(fileContent);
 
-                        ViewBag.Message = "File upload sucessfuly!";
+                        ViewBag.Message = "File uploaded successfully!";
                     }else{
                         ViewBag.ErrorMessage = "Invalid file format! It should be a CSV, having only numbers separated by commas.";
                     }
@@ -64,10 +64,10 @@ public class HomeController : Controller
 
             }
             else if(files.Count > 1){
-                ViewBag.ErrorMessage = "Submit only a single form!";
+                ViewBag.ErrorMessage = "Please, submit only a single file!";
             }
             else{
-                ViewBag.ErrorMessage = "File to upload required!";
+                ViewBag.ErrorMessage = "A file to upload is required!";
             }
         }
         catch(Exception _ex){
